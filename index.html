@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Page Designing</title>
+<link rel="stylesheet" type="text/css" href="meenu.css">
+</head>
+<body>
+
+    <header>
+        <h1>Meenakshi sundaram.M</h1>
+        <nav>
+            <a href = "http://www.gmail.com">One</a>
+            <a href = "http://www.facebook.com">Two</a>
+            <a href = "http://www.google.com">Three</a>
+            <a href = "http://www.github.com/ammaritiz">Github</a><br>
+    </nav>
+    </header>
+    <section>
+        <h2>Favorite Foods</h2>
+        <ul>
+            <li>Idly</li>
+            <li>Chapathi</li>
+            <li>Chicken</li>
+            <li>Mutton</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Achievements</h2>
+        <lable for="file">progress in this course(100%):</label>
+<progress id="file" value="100"
+max="100"></progress><br>
+<lable for="file">progress in the specialization capstone(20%):</label>
+<progress id="file" value="20"
+max="100"></progress><br>
+<lable for="file">progress in life goals(70%):</label>
+<progress id="file" value="70"
+max="100"></progress><br>
+    </section>
+    <section>
+        <h2>More About Me</h2>
+        <details>
+            <summary>My Childhood</summary>I grew up in chennai.There I had many friends and now im really missing them more
+        </details>
+    </section>
+<br>
+    <footer>
+        <img src="http://www.intro-webdesign.com/images/newlogo.png" alt="Web Design For Everyone">
+        This page was created by Meenakshisundaram.M and Colleen van Lent.
+        To learn more about web design, visit
+        <a href="http://www.intro-webdesign.com/">Intro to Web Design</a>
+    </footer>
+<div>This is a web page that is designed using the basic html and css.This page was created by Meenakshi sundaram.M and Colleen van Lent with the help of html and css.This page is very easy to design.This is a web page that is designed using the basic html and css.</div>
+<div style="background-color:#b58cbdc9">This is a web page that is designed using the basic html and css.This page was created by Meenakshi sundaram and Colleen van Lent with the help of html and css.This page is very easy to design.This is a web page that is designed using the basic html and css.</div>
+<div style="background-color:#bcbf6c">This is a web page that is designed using the basic html and css.This page was created by Meenakshi sundaram.M and Colleen van Lent with the help of html and css.This page is very easy to design.This is a web page that is designed using the basic html and css.</div>
+<section>
+<br>
+<lable>meenu</lable>
+<progress value="30" max="100"></progress>
+</section>
+<br>
+<section>
+<table border=2>
+<tr><th>ENROLLED</th><th>COMPLETED</th><th>IN PROGRESS</th></tr>
+<tr><td>50</td><td>35</td><td>15</td></tr>
+<tr><td>60</td><td>34</td><td>26</td></tr>
+</table>
+</section><br>
+<section>
+<marquee>MY FIRST WEBPAGE</marquee>
+</section>
+<p>To Visit my website</p>
+<a href="http://www.introtowebdesign.com"><button type="button">click here</button></a>
+<h2 style="background-color:#e0c13c">About You:</h2>
+<script>
+var name=prompt("Enter your name");
+document.write("<h3>"+name+"</h3>");
+var age=prompt("Enter your age");
+document.write("<h3>"+age+"</h3>");
+var date=Date();
+document.write("<h3>"+date+"</h3>");
+document.write("<h3>"+document.baseURI+"</h3>");
+console.log("mine");
+var fruits=[];
+document.getElementById("ab").innerHTML= fruits;
+function myFunction(){
+var fruit=prompt("What is your favourite fruit");
+fruits[fruits.length]=fruit;
+document.getElementById("ab").innerHTML= fruits;
+
+}
+function check()
+{
+var password=document.getElementById('pp');
+var password1=document.getElementById('qq');
+if(password.value!=password1.value)
+{
+alert("The passwords must match");
+}
+}
+
+</script>
+<h2 style="background-color:#e0c13c">Click buttons to view changes:</h2>
+<button onclick="document.getElementById('mee').innerHTML='Clicked First Button';">First</button>
+<button onclick="document.getElementById('mee').innerHTML='Clicked Second Button';">Second</button>
+<button onclick="document.getElementById('mee').innerHTML='Clicked Third Button';">Third</button>
+<p>This code shouldn't change</p>
+<p id="mee">This will Change</p>
+<p>This shouldn't change either</p>
+<h2 style="background-color:#e0c13c">Your favourite fruits:</h2>
+<button onclick="myFunction()">Add your Favourite Fruit here</button>
+<p id="ab">Add your favourite fruit</p>
+<h2 style="background-color:#e0c13c"> Personal Information</h2>
+<form>
+
+<label for='name'>Name</label>
+<input type='text' id='name' name='name' required><br>
+<label for='date'> Date of birth</label>
+<input type='date' id='date' name='date' required><br>
+<label for='address'>address</label>
+<input type='text' id='address' name='address' required><br>
+<label for='email'>Email Id</label>
+<input type='email' id='email' name='email' required><br>
+
+<label for='password'>Password</label>
+<input type='password' id='pp' name='password' required><br>
+<label for='password'>Confirm Password</label>
+<input type='password' id='qq' name='password1' required onchange="check()"><br>
+
+
+
+<label for='URL'>URL</label>
+<input type='URL' id='URL' name='URL' required><br>
+<label for='number'>Number of arrears</label>
+<input type='number' id='number' name='number' required><br>
+How can I contact you?<br>
+<label>
+<input type="checkbox" name="contact" value="Through Email">Through Email
+</label><br/>
+<label><input type="checkbox" name="contact" value="Through mobile number">Through mobile number</label><br>
+<label><input type="checkbox" name"contact" value="through whatsapp">Through whatsapp</label><br>
+Gender<br>
+<label><input type="radio" name="gender" value="Male">Male </label><br>
+<label><input type="radio" name="gender" value="Female">Female </label><br>
+
+
+<input type='submit' value="Submit"><br>
+<h2>Click on your favourite App to open:</h2>
+<a href="http://www.facebook.com"><img src="fbb.png" alt="facebook" width="150px"/></a><br>
+<a href="http://www.whatsapp.com"><img src="whh.png" alt="whatsapp" width="150px"/></a><br>
+<a href="http://www.wechat.com"><img src="wechat.jpg" alt="wechat" width="150px"/></a><br>
+<a href="http://www.twitter.com"><img src="twi.png" alt="twitter" width="150px"/></a><br>
+<a href="http://www.instagram.com"><img src="ins.png" alt="facebook" width="150px"/></a>
+
+
+
+</body>
+</html>
